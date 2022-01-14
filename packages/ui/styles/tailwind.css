@@ -1,0 +1,12 @@
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+html,
+body {
+  @apply antialiased;
+}

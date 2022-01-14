@@ -1,5 +1,5 @@
 {
-  "name": "turborepo-basic-shared",
+  "name": "emry",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -10,7 +10,9 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "storybook": "turbo run storybook",
+    "build-storybook": "turbo run build-storybook"
   },
   "devDependencies": {
     "prettier": "^2.5.1",
@@ -32,6 +34,14 @@
       },
       "dev": {
         "cache": false
+      },
+      "storybook": {
+        "cache": false
+      },
+      "build-storybook": {
+        "outputs": [
+          "storybook-static/**"
+        ]
       }
     }
   },
