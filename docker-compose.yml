@@ -1,0 +1,21 @@
+version: '0.1'
+services:
+  #turborepo
+  turbo:
+    container_name: emry
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+      - "3002:3002"
+    volumes:
+      - ./:/app/
+       # Just specify a path and let the Engine create a volume
+      - /app/node_modules/
+    restart: on-failure
+
+networks:
+  turbo-network:
+    driver: bridge

@@ -38,8 +38,9 @@ export const Checkbox = forwardRef<CheckboxRef, CheckboxProps>((props, ref) => {
         className={classNames(
           disabled
             ? "bg-grey3 border-grey3 cursor-not-allowed"
-            : "border-black",
-          "cursor-pointer w-[0.938rem] h-[0.938rem] border-solid border rounded-none bg-white/0 focus:ring-black focus:ring-1 text-black"
+            : "border-black dark:border-grey2",
+          isChecked ? "checked:border-white" : "",
+          "cursor-pointer w-[0.938rem] h-[0.938rem] border-solid border rounded-none bg-white/0 focus:ring-black dark:focus:border-grey2 focus:ring-1 text-black"
         )}
         tabIndex={0}
       />
@@ -47,6 +48,7 @@ export const Checkbox = forwardRef<CheckboxRef, CheckboxProps>((props, ref) => {
         <label
           className={classNames(
             label && disabled ? "text-grey3" : "",
+            isChecked ? "dark:text-white" : "dark:text-grey2",
             "text-caption text-black ml-3"
           )}
           htmlFor={checkboxId}

@@ -24,7 +24,9 @@ export const Radio = forwardRef<RadioRef, RadioProps>((props, ref) => {
 
   return (
     <div>
-      {label && <label className="text-body1 text-black">{label}</label>}
+      {label && (
+        <label className="text-body1 text-black dark:text-white">{label}</label>
+      )}
       {description && (
         <p className="text-body2 leading-5 text-grey2 mb-4">{description}</p>
       )}
@@ -52,15 +54,15 @@ export const Radio = forwardRef<RadioRef, RadioProps>((props, ref) => {
                   className={classNames(
                     option.disabled
                       ? "border-grey3 cursor-not-allowed"
-                      : "border-black cursor-pointer",
-                    "focus:ring-black focus:ring-1 w-[0.938rem] h-[0.938rem] text-black bg-white/0"
+                      : "border-black dark:border-grey2 cursor-pointer",
+                    "w-[0.938rem] h-[0.938rem"
                   )}
                   disabled={option.disabled}
                 />
                 {option.value && (
                   <label
                     htmlFor={id}
-                    className="ml-3 block text-caption cursor-pointer"
+                    className="ml-3 block text-caption cursor-pointer text-black dark:text-white"
                   >
                     {option.value}
                   </label>

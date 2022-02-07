@@ -32,7 +32,7 @@ export const Button = forwardRef<ButtonRef, ButtonProps>((props, ref) => {
       disabled={disabled}
       className={classNames(
         variant === "black"
-          ? `text-white bg-black rounded ${
+          ? `text-white dark:text-black bg-black dark:bg-white rounded ${
               disabled ? "text-black bg-grey4 rounded" : ""
             }`
           : "",
@@ -42,17 +42,18 @@ export const Button = forwardRef<ButtonRef, ButtonProps>((props, ref) => {
             }`
           : "",
         variant === "ghost"
-          ? `bg-opacity-0 border border-black rounded ${
+          ? `bg-opacity-0 border border-black dark:border-white dark:text-white text-black rounded ${
               disabled ? "text-black bg-grey4 rounded" : ""
             }`
           : "",
         variant === "ghostWhite"
-          ? `text-white bg-black ${
+          ? `text-white dark:text-black bg-black dark:bg-white ${
               disabled ? "text-black bg-grey4 rounded" : ""
             }`
           : "",
         icon && iconAlign === "right" ? "flex-row-reverse" : "",
-        "h-[3.125rem] w-[10.375rem] relative inline-flex items-center justify-center hover:bg-opacity-90 transition-all"
+        !disabled ? "hover:bg-opacity-90 transition-all" : "cursor-not-allowed",
+        "h-[3.125rem] w-[10.375rem] relative inline-flex items-center justify-center"
       )}
     >
       {icon && (
@@ -67,7 +68,7 @@ export const Button = forwardRef<ButtonRef, ButtonProps>((props, ref) => {
       )}
       {label}
       {variant === "ghostWhite" && (
-        <span className="absolute border border-white border-solid inset-[1px] rounded" />
+        <span className="absolute border border-white dark:border-black border-solid inset-[1px] rounded" />
       )}
     </button>
   );

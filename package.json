@@ -12,7 +12,9 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "storybook": "turbo run storybook",
-    "build-storybook": "turbo run build-storybook"
+    "build-storybook": "turbo run build-storybook",
+    "docker-build": "docker build . -t emry -f Dockerfile",
+    "docker-start": "docker run --name emry -p 3000:3000 emry"
   },
   "devDependencies": {
     "prettier": "^2.5.1",
