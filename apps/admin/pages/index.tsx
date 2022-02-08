@@ -1,3 +1,3 @@
 export default function Docs() {
-  return <>Admin</>;
+  return <h1>Admin</h1>;
 }
