@@ -1,4 +1,0 @@
-[build]
-  command = "yarn build"
-  functions = "netlify/functions"
-  publish = ".next"
