@@ -12,7 +12,10 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "storybook": "turbo run storybook",
-    "build-storybook": "turbo run build-storybook"
+    "build:storybook": "turbo run build-storybook",
+    "build:admin": "cd apps/admin && yarn run build",
+    "build:docs": "cd apps/docs && yarn run build",
+    "build:web": "cd apps/web && yarn run build"
   },
   "devDependencies": {
     "prettier": "^2.5.1",
