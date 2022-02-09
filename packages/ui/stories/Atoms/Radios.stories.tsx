@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Radio } from "../../components/atoms/Radio";
+import { Radio } from "../..";
 
 export default {
   title: "⚛️ Atoms/Radios",

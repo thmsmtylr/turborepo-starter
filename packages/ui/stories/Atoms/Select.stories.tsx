@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Select } from "../../components/atoms/Select";
+import { Select } from "../..";
 
 export default {
   title: "⚛️ Atoms/Select",

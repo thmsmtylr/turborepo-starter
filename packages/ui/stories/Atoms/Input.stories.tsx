@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Input } from "../../components/atoms/Input";
+import { Input } from "../..";
 import ArrowRightLong from "../../images/icons/arrows/@1x/right-short.svg";
 import ArrowRight from "../../images/icons/arrows/@1x/right.svg";
 import Show from "../../images/icons/basic/@1px/show.svg";

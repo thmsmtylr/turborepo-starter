@@ -1,6 +1,10 @@
-import * as React from "react";
+// atoms
 export * from "./components/atoms/Button";
 export * from "./components/atoms/Checkbox";
 export * from "./components/atoms/Input";
 export * from "./components/atoms/Radio";
 export * from "./components/atoms/Select";
+export * from "./components/atoms/Typography";
+// molecules
+// organisms
+export * from "./components/organisms/Navbar";

@@ -33,3 +33,7 @@ yarn-error.log*
 .turbo
 # Local Netlify folder
 .netlify
+
+.vscode
+
+storybook-static

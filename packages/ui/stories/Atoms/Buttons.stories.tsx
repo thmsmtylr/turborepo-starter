@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Button } from "../../components/atoms/Button";
+import { Button } from "../..";
 import ArrowDown from "../../images/icons/arrows/@1x/down.svg";
 
 export default {

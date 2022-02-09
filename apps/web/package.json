@@ -19,7 +19,6 @@
     "config": "*",
     "eslint": "7.32.0",
     "next-transpile-modules": "9.0.0",
-    "prettier-plugin-tailwind": "^2.2.12",
     "tsconfig": "*",
     "typescript": "^4.5.3"
   }
