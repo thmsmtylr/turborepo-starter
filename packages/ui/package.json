@@ -48,6 +48,7 @@
   "dependencies": {},
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build:storybook": "build-storybook",
+    "build:ui": "NODE_ENV=production rollup -c rollup.config.js"
   }
 }
