@@ -1,3 +1,5 @@
+// tailwind
+import "./styles/tailwind.css";
 // atoms
 export * from "./components/atoms/Button";
 export * from "./components/atoms/Checkbox";

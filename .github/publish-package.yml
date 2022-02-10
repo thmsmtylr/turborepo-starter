@@ -1,0 +1,35 @@
+# name: Publish Packages
+
+# on:
+#   release:
+#     types: [created]
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     permissions:
+#       contents: read
+#       packages: write
+
+#     strategy:
+#       matrix:
+#         node-version: [14.x]
+
+#     env:
+#       GITHUB_AUTH_TOKEN: ""
+
+#     steps:
+#       - uses: actions/checkout@v2
+#       - name: Use Node.js ${{ matrix.node-version }}
+#         uses: actions/setup-node@v1
+#         with:
+#           node-version: ${{ matrix.node-version }}
+#           registry-url: "https://npm.pkg.github.com"
+#           # Defaults to the user or organization that owns the workflow file
+#           scope: "@zipmex"
+#       - run: npm clean-install
+#         env:
+#           GITHUB_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
+#       - run: npm run build --if-present
+#       - run: npm run build:publish
+#         env: NODE_AUT

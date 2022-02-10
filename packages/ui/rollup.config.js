@@ -4,7 +4,12 @@ import svgr from "@svgr/rollup";
 import typescript from "rollup-plugin-typescript2";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import resolve from "@rollup/plugin-node-resolve";
+import url from "@rollup/plugin-url";
+import postcss from "rollup-plugin-postcss";
+import autoprefixer from "autoprefixer";
+import tailwind from "tailwindcss";
 import { babel } from "@rollup/plugin-babel";
+import { terser } from "rollup-plugin-terser";
 import { DEFAULT_EXTENSIONS } from "@babel/core";
 
 export default [
@@ -13,8 +18,6 @@ export default [
     output: {
       file: "dist/index.tsx",
       format: "cjs",
-      sourcemap: false,
-      banner: "/* eslint-disable */",
     },
     external: ["react", "react-dom"],
     plugins: [
@@ -24,13 +27,33 @@ export default [
       del({ targets: "dist/*" }),
       svgr(),
       typescript({
-        verbosity: 3,
+        verbosity: 1,
         tsconfig: "./tsconfig.rollup.json",
       }),
+      url(),
       babel({
         babelHelpers: "bundled",
         exclude: "node_modules/**",
         extensions: [...DEFAULT_EXTENSIONS, ".ts", "tsx"],
+      }),
+      postcss({
+        config: {
+          path: "./postcss.config.js",
+        },
+        plugins: [
+          autoprefixer(),
+          tailwind({
+            config: "./tailwind.config.js",
+          }),
+        ],
+      }),
+      terser({
+        compress: true,
+        mangle: true,
+        output: {
+          preamble: "/* eslint-disable */",
+          comments: false,
+        },
       }),
     ],
   },
