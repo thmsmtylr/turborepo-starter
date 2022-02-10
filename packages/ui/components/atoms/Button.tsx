@@ -5,10 +5,10 @@ export interface ButtonProps {
   variant: "black" | "ghost" | "white" | "ghostWhite";
   label: string;
   onClick: (e: MouseEvent<HTMLButtonElement>) => unknown;
-  disabled: boolean;
+  disabled?: boolean;
   icon?: any | SVGElement;
   iconAlign?: "left" | "right";
-  type: "button" | "submit";
+  type?: "submit" | "reset" | "button" | undefined;
 }
 
 export type ButtonRef = HTMLButtonElement;
@@ -18,7 +18,7 @@ export const Button = forwardRef<ButtonRef, ButtonProps>((props, ref) => {
     variant = "black",
     label,
     onClick,
-    disabled,
+    disabled = false,
     icon,
     iconAlign,
     type = "button",

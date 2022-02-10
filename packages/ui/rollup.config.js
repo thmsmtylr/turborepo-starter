@@ -24,13 +24,20 @@ export default [
       peerDepsExternal(),
       resolve(),
       commonjs(),
-      del({ targets: "dist/*" }),
+      del({ targets: "./dist/*" }),
       svgr(),
       typescript({
         verbosity: 1,
         tsconfig: "./tsconfig.rollup.json",
       }),
-      url(),
+      url({
+        include: [
+          "./fonts/**/*.ttf",
+          "./fonts/**/*.woff",
+          "./fonts/**/*.woff2",
+          "./fonts/**/*.svg",
+        ],
+      }),
       babel({
         babelHelpers: "bundled",
         exclude: "node_modules/**",
