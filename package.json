@@ -15,7 +15,8 @@
     "build:storybook": "turbo run build-storybook",
     "build:admin": "cd apps/admin && yarn run build",
     "build:docs": "cd apps/docs && yarn run build",
-    "build:web": "cd apps/web && yarn run build"
+    "build:web": "cd apps/web && yarn run build",
+    "build:ui": "cd packages/ui && rollup -c rollup.config.ts"
   },
   "devDependencies": {
     "prettier": "^2.5.1",

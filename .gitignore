@@ -31,9 +31,15 @@ yarn-error.log*
 
 # turbo
 .turbo
+
 # Local Netlify folder
 .netlify
 
+# vscode
 .vscode
 
+# storybook
 storybook-static
+
+# rollup
+dist
