@@ -1,4 +1,4 @@
-import { uniqueId } from "lodash";
+import uniqueId from "lodash/uniqueId";
 import { forwardRef, ChangeEvent } from "react";
 import { classNames } from "../../helpers/classNames";
 

@@ -1,4 +1,4 @@
-import { uniqueId } from "lodash";
+import uniqueId from "lodash/uniqueId";
 import { useState, useEffect, ChangeEvent, forwardRef } from "react";
 import { classNames } from "../../helpers/classNames";
 
