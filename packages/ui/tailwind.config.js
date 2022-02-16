@@ -113,10 +113,19 @@ module.exports = {
         "Noto Color Emoji",
       ],
     },
-    extend: {},
+    extend: {
+      height: {
+        navbar: "6.5rem",
+        logo: "1.75rem",
+      },
+      maxWidth: {
+        navbar: "71.25rem",
+      },
+      gap: {
+        grid: "4.25rem",
+      },
+    },
   },
-  variants: {
-    extend: {},
-  },
+  variants: {},
   plugins: [require("@tailwindcss/forms")],
 };

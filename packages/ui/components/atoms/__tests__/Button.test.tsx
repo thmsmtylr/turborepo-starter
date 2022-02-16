@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import { Button } from "./Button";
+import { Button } from "../Button";
 import { axe, toHaveNoViolations } from "jest-axe";
 
 expect.extend(toHaveNoViolations);

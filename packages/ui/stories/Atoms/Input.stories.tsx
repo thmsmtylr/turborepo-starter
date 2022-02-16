@@ -1,4 +1,5 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { noop } from "lodash";
 import { Input } from "../..";
 import ArrowRightLong from "../../images/icons/arrows/@1x/right-short.svg";
 import ArrowRight from "../../images/icons/arrows/@1x/right.svg";
@@ -14,6 +15,7 @@ const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   placeholder: "Default input",
+  onChange: () => noop,
 };
 
 export const Disabled = Template.bind({});

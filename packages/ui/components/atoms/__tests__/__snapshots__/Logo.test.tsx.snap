@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`logo as text renders unchanged 1`] = `
+<div>
+  <div
+    class="dark:text-white text-black"
+  >
+    Emry
+  </div>
+</div>
+`;
