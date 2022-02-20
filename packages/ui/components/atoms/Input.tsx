@@ -3,6 +3,7 @@ import { classNames } from "../../helpers/classNames";
 
 export interface InputProps {
   placeholder: string;
+  ariaLabel: string;
   type?: "text" | "email" | "password" | string;
   disabled?: boolean;
   icon?: any | SVGElement;
@@ -19,6 +20,7 @@ export type InputRef = HTMLInputElement;
 export const Input = forwardRef<InputRef, InputProps>((props, ref) => {
   const {
     placeholder,
+    ariaLabel,
     type,
     disabled,
     icon,
@@ -31,15 +33,15 @@ export const Input = forwardRef<InputRef, InputProps>((props, ref) => {
   } = props;
   const [value, setValue] = useState<string>("");
 
-  const handleChangle = (e: ChangeEvent<HTMLInputElement>) =>
+  const handleChangle = (e: ChangeEvent<HTMLInputElement>): void =>
     setValue(e.target.value);
 
   const input = (
     <input
       ref={ref}
       type={type}
-      placeholder={required ? "* " + placeholder : placeholder}
-      aria-label={placeholder}
+      placeholder={required ? `* ${placeholder}` : placeholder}
+      aria-label={ariaLabel}
       onChange={(e) => {
         onChange(e), handleChangle(e);
       }}
@@ -47,13 +49,10 @@ export const Input = forwardRef<InputRef, InputProps>((props, ref) => {
       disabled={disabled}
       required={required}
       className={classNames(
-        disabled
-          ? "cursor-not-allowed border-b-grey3 placeholder:text-grey3"
-          : "",
         error
           ? "text-error border-b-error placeholder:text-error"
           : "text-black border-b-grey3 focus:border-b-black placeholder:text-grey2",
-        "text-body2 w-full border-x-0 border-t-0 border-b focus:ring-white/0 focus:outline-none h-[2.063rem] p-2.5 bg-white/0 transition-colors"
+        "dark:text-white text-body2 w-full border-x-0 border-t-0 border-b focus:ring-white/0 focus:outline-none h-[2.063rem] p-2.5 bg-white/0 transition-colors disabled:cursor-not-allowed disabled:border-b-grey3 disabled:placeholder:text-grey3"
       )}
     />
   );

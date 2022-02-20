@@ -32,7 +32,7 @@ export const Navbar = forwardRef<NavbarRef, NavbarProps>((props, ref) => {
   const align = alignItems ? alignItems : NavbarAlignItems.Right;
 
   return (
-    <nav className="bg-background dark:bg-black" ref={ref}>
+    <header className="bg-background dark:bg-black" ref={ref}>
       <div className="mx-auto px-2 sm:px-6 lg:px-8 max-w-navbar">
         <div className="relative flex items-center h-navbar">
           <div className="grid grid-cols-12 flex-1 gap-grid">
@@ -48,36 +48,41 @@ export const Navbar = forwardRef<NavbarRef, NavbarProps>((props, ref) => {
                 )}
               >
                 {items && (
-                  <ul className="flex space-x-16 items-center">
-                    {items.map((item, index) => {
-                      if (item.as === "link") {
-                        return (
-                          <li
-                            key={index}
-                            className={classNames(
-                              item.current
-                                ? "border-b border-b-grey3 dark:border-b-grey1"
-                                : "hover:-mb-[7px]",
-                              "text-body2 pb-1.5 -mb-1.5 transition duration-300 hover:border-b hover:border-black dark:hover:border-white dark:text-white text-black"
-                            )}
-                          >
-                            <Link aria-current={item.current} href={item.href}>
-                              {item.name}
-                            </Link>
-                          </li>
-                        );
-                      }
+                  <nav>
+                    <ul className="flex space-x-16 items-center">
+                      {items.map((item, index) => {
+                        if (item.as === "link") {
+                          return (
+                            <li
+                              key={index}
+                              className={classNames(
+                                item.current
+                                  ? "border-b border-b-grey3 dark:border-b-grey1"
+                                  : "hover:-mb-[7px]",
+                                "text-body2 pb-1.5 -mb-1.5 transition duration-300 hover:border-b hover:border-black dark:hover:border-white dark:text-white text-black"
+                              )}
+                            >
+                              <Link
+                                aria-current={item.current}
+                                href={item.href}
+                              >
+                                {item.name}
+                              </Link>
+                            </li>
+                          );
+                        }
 
-                      return <li key={index}>{item.el}</li>;
-                    })}
-                  </ul>
+                        return <li key={index}>{item.el}</li>;
+                      })}
+                    </ul>
+                  </nav>
                 )}
               </div>
             )}
           </div>
         </div>
       </div>
-    </nav>
+    </header>
   );
 });
 

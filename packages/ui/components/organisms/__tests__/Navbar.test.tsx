@@ -11,7 +11,7 @@ jest.mock("next/link", () => {
   };
 });
 
-const mockItems: NavbarProps["items"] = [
+const items: NavbarProps["items"] = [
   {
     as: "link",
     name: "Features",
@@ -42,12 +42,12 @@ const mockItems: NavbarProps["items"] = [
   },
 ];
 
-const items = test("navbar passes a11y test", async () => {
-  const { container } = render(<Navbar items={mockItems} />);
+test("navbar passes a11y test", async () => {
+  const { container } = render(<Navbar items={items} />);
   expect(await axe(container)).toHaveNoViolations();
 });
 
 it("navbar renders unchanged", () => {
-  const { container } = render(<Navbar items={mockItems} />);
+  const { container } = render(<Navbar items={items} />);
   expect(container).toMatchSnapshot();
 });
