@@ -43,3 +43,6 @@ storybook-static
 
 # rollup
 dist
+
+# yarn
+.yarn
