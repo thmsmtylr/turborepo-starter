@@ -55,6 +55,7 @@
     "typescript": "^4.5.3"
   },
   "scripts": {
+    "dev": "start-storybook -p 6006",
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook",
     "build:ui": "NODE_ENV=production rollup -c rollup.config.js",

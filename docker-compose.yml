@@ -1,6 +1,6 @@
-version: '0.1'
+version: "0.1"
 services:
-  #turborepo
+  # turborepo
   turbo:
     container_name: emry
     build:
@@ -10,9 +10,10 @@ services:
       - "3000:3000"
       - "3001:3001"
       - "3002:3002"
+      - "6006:6006"
     volumes:
       - ./:/app/
-       # Just specify a path and let the Engine create a volume
+        # Just specify a path and let the Engine create a volume
       - /app/node_modules/
     restart: on-failure
 
