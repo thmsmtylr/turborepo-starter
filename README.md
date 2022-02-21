@@ -1,4 +1,4 @@
-# Turborepo starter
+# Emry starter
 
 This is an official Yarn v1 starter turborepo.
 
