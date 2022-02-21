@@ -1,6 +1,6 @@
 # Emry starter
 
-This is a Yarn v3 starter monorepo.
+This is a Yarn v3 monorepo starter.
 
 ## What's inside?
 
@@ -26,7 +26,8 @@ This turborepo has some additional tools already setup for you:
 - [ESLint](https://eslint.org/) for code linting
 - [Jest](https://jestjs.io) test runner for all things JavaScript
 - [Prettier](https://prettier.io) for code formatting
-- [Rollup.js](https://rollupjs.org) module bundler for packaging the `ui`
+- [Rollup.js](https://rollupjs.org) module bundler for packaging the component library
+- [GitHub Actions](https://docs.github.com/en/actions) for publishing the component library
 - [Docker](https://www.docker.com/) as an alternative build/development tool
 
 ### Build
@@ -53,14 +54,6 @@ or
 cd emry
 docker-compose up --build
 ```
-
-or
-
-```
-docker-compose up -d
-```
-
-to run it in the background
 
 ### Remote Caching
 
