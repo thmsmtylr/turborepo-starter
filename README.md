@@ -1,3 +1,5 @@
+![Emry](packages/ui/images/emry-icon.png?raw=true "Emry")
+
 # Emry starter
 
 This is a Yarn v3 monorepo starter.
@@ -29,7 +31,7 @@ This turborepo has some additional tools already setup for you:
 - [Rollup.js](https://rollupjs.org) module bundler for packaging the component library
 - [GitHub Actions](https://docs.github.com/en/actions) for publishing the component library
 - [Docker](https://www.docker.com/) as an alternative build/development tool
-- [Tailwind](https://tailwindcss.com/) utility first css framework for styling
+- [Tailwind](https://tailwindcss.com/) a utility first css framework for styling
 
 ### Build
 
