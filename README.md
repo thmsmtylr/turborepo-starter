@@ -1,4 +1,6 @@
-![Emry](packages/ui/images/emry-icon.png?raw=true "Emry")
+<p align="center">
+  <a href="https://emry.dev"><img src="packages/ui/images/emry-icon.png?raw=true" width="150" /></a>
+</p>
 
 # Emry starter
 
