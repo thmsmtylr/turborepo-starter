@@ -23,5 +23,5 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm run build:ui --if-present
+      - run: yarn run build:ui --if-present
         name: Build
