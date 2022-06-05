@@ -30,6 +30,7 @@ This turborepo has some additional tools already setup for you:
 - [GitHub Actions](https://docs.github.com/en/actions) for publishing the component library
 - [Docker](https://www.docker.com/) as an alternative build/development tool
 - [Tailwind](https://tailwindcss.com/) a utility first css framework for styling
+- [Storybook.js](https://storybook.js.org/) build component driven UIs faster
 
 ### Build
 
