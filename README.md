@@ -1,10 +1,6 @@
-<p align="center">
-  <a href="https://emry.dev"><img src="packages/ui/images/emry-icon.png?raw=true" width="70" /></a>
-</p>
+# Turborepo starter
 
-# Emry starter
-
-This is a Yarn v3 monorepo starter.
+This is a Yarn v3 Turborepo (monorepo) starter.
 
 ## What's inside?
 
@@ -62,13 +58,7 @@ docker-compose up --build
 
 ### UI
 
-Emry follows the [Atomic design methodology](https://atomicdesign.bradfrost.com/chapter-2/) for the composition of UI components. Atomic design is a methodology composed of five distinct stages working together to create interface design systems in a more deliberate and hierarchical manner. The five stages of atomic design are:
-
-- **Atoms**: Of our interfaces serve as the foundational building blocks that comprise all our user interfaces.
-- **Molecules**: Are relatively simple groups of UI elements functioning together as a unit
-- **Organisms**: Are relatively complex UI components composed of groups of molecules and/or atoms and/or other organisms
-- **Templates**: Are page-level objects that place components into a layout and articulate the design’s underlying content structure
-- **Pages**: Are specific instances of templates that show what a UI looks like with real representative content in place
+Todo
 
 ### Remote Caching
 
