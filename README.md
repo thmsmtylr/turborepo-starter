@@ -1,4 +1,4 @@
-# Turborepo starter
+# Turborepo starter (Next.js, TypeScript, Docker, ESLint, Jest, Prettier, Rollup.js, Tailwind)
 
 This is a Yarn v3 Turborepo (monorepo) starter.
 
