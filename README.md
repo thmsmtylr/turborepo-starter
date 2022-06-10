@@ -35,7 +35,7 @@ This turborepo has some additional tools already setup for you:
 To build all apps and packages, run the following command:
 
 ```
-cd emry
+cd turborepo-starter
 yarn run build
 ```
 
@@ -44,14 +44,14 @@ yarn run build
 To develop all apps and packages, run the following command:
 
 ```
-cd  turborepo-starter
+cd turborepo-starter
 yarn run dev
 ```
 
 or
 
 ```
-cd  turborepo-starter
+cd turborepo-starter
 docker-compose up --build
 ```
 
