@@ -44,14 +44,14 @@ yarn run build
 To develop all apps and packages, run the following command:
 
 ```
-cd emry
+cd  turborepo-starter
 yarn run dev
 ```
 
 or
 
 ```
-cd emry
+cd  turborepo-starter
 docker-compose up --build
 ```
 
