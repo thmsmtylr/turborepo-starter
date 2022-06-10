@@ -66,7 +66,7 @@ Turborepo can use a technique known as [Remote Caching (Beta)](https://turborepo
 By default, Turborepo will cache locally. To enable Remote Caching (Beta) you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
 
 ```
-cd emry
+cd turborepo-starter
 npx turbo login
 ```
 
