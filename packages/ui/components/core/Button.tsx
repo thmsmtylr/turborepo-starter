@@ -40,6 +40,9 @@ export interface ButtonProps {
 
 export type ButtonRef = HTMLButtonElement;
 
+/**
+ * @description Buttons communicate actions that users can take.
+ */
 export const Button = forwardRef<ButtonRef, ButtonProps>((props, ref) => {
   const {
     size = ButtonSize.SM,
