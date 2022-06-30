@@ -61,5 +61,9 @@
     "build:ui": "NODE_ENV=production rollup -c rollup.config.js",
     "test": "jest",
     "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "react": "18",
+    "react-dom": "18"
   }
 }
