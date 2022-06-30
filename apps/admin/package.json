@@ -10,9 +10,12 @@
     "netlify": "node run netlify-cli init"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.7",
     "next": "latest",
+    "postcss": "^8.4.14",
     "react": "latest",
     "react-dom": "latest",
+    "tailwindcss": "^3.1.4",
     "ui": "*"
   },
   "devDependencies": {
