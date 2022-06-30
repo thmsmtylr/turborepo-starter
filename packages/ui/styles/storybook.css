@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
-
 html,
 body {
-  @apply dark:bg-black bg-background;
+  @apply antialiased font-inter;
 }

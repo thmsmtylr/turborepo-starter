@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Button, ButtonVariant } from "../..";
+import { Button } from "../..";
 
 export default {
   title: "⚛️ Core/Buttons",
@@ -8,9 +8,8 @@ export default {
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
-export const Black = Template.bind({});
-Black.args = {
-  variant: ButtonVariant.Black,
-  label: "Black",
+export const Default = Template.bind({});
+Default.args = {
+  label: "Default",
   onClick: () => console.log("On click"),
 };

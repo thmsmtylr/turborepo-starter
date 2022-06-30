@@ -3,14 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
-
 * {
   scrollbar-width: thin;
 }
 
 html,
 body {
-  @apply antialiased;
+  @apply antialiased font-inter;
 }
