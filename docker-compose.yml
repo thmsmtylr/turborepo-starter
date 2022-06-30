@@ -1,8 +1,8 @@
-version: "0.1"
+version: "2"
 services:
   # turborepo
   turbo:
-    container_name: emry
+    container_name: turborepo-starter
     build:
       context: .
       dockerfile: Dockerfile
