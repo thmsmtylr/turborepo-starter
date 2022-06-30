@@ -1,6 +1,6 @@
 {
-  "name": "emry",
-  "version": "0.0.0",
+  "name": "turborepo-starter",
+  "version": "0.0.1",
   "private": true,
   "workspaces": [
     "apps/*",

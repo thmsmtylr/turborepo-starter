@@ -8174,17 +8174,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"emry@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "emry@workspace:."
-  dependencies:
-    next-link: ^2.0.0
-    prettier: ^2.5.1
-    react-dom: ^17.0.2
-    turbo: latest
-  languageName: unknown
-  linkType: soft
-
 "encodeurl@npm:~1.0.2":
   version: 1.0.2
   resolution: "encodeurl@npm:1.0.2"
@@ -17652,6 +17641,17 @@ __metadata:
   checksum: 92e20481bdbf0291ec00a04dc3d621658e91dc739788dd150ef5cf712c076dc50ab44020f46eb3d31f9aa08437c778a1184f1e357dd46b229f35447aed9adf0d
   languageName: node
   linkType: hard
+
+"turborepo-starter@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "turborepo-starter@workspace:."
+  dependencies:
+    next-link: ^2.0.0
+    prettier: ^2.5.1
+    react-dom: ^17.0.2
+    turbo: latest
+  languageName: unknown
+  linkType: soft
 
 "type-check@npm:^0.4.0, type-check@npm:~0.4.0":
   version: 0.4.0
