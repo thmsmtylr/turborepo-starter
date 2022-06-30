@@ -2,6 +2,7 @@
   "name": "turborepo-starter",
   "version": "0.0.1",
   "private": true,
+  "author": "Thomas Taylor (https://thmsmtylr.com)",
   "workspaces": [
     "apps/*",
     "packages/*"
