@@ -1,12 +1,12 @@
-import { forwardRef, MouseEvent } from "react";
-import { classNames } from "../../helpers/classNames";
+import { forwardRef } from "react";
+import { classNames } from "../helpers/classNames";
 
 export type ButtonSize = "sm" | "md" | "lg" | "xl" | "xxl";
 
 export interface ButtonProps {
-  size: ButtonSize;
+  size?: ButtonSize;
   label: string;
-  onClick: (e: MouseEvent<HTMLButtonElement>) => unknown;
+  onClick?: () => void;
   disabled?: boolean;
   icon?: any | SVGElement;
   iconAlign?: "left" | "right";
@@ -31,7 +31,7 @@ export const Button = forwardRef<ButtonRef, ButtonProps>((props, ref) => {
     <button
       ref={ref}
       type={type}
-      onClick={(e) => onClick(e)}
+      onClick={onClick}
       disabled={disabled}
       className={classNames(
         size === "sm" ? "px-3.5 py-2" : "",

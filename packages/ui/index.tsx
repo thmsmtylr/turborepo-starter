@@ -2,4 +2,4 @@
 import "./styles/tailwind.css";
 
 // Core
-export * from "./components/core/Button";
+export * from "./components/Button";

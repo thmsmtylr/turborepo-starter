@@ -1,7 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { Button } from "ui";
 
-const Docs: NextPage = () => {
+const Admin: NextPage = () => {
   return (
     <>
       <Head>
@@ -11,9 +12,10 @@ const Docs: NextPage = () => {
       </Head>
       <main>
         <h1>Turborepo Starter: Admin</h1>
+        <Button label="button" onClick={() => console.log("click")} />
       </main>
     </>
   );
 };
 
-export default Docs;
+export default Admin;
