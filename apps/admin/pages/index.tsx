@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Button } from "ui";
+import "ui/styles/tailwind.css";
 
 const Admin: NextPage = () => {
   return (
