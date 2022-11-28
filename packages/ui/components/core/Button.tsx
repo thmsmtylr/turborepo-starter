@@ -66,7 +66,7 @@ export const Button = forwardRef<ButtonRef, ButtonProps>((props, ref) => {
         size === ButtonSize.XL ? "px-5 py-3" : "",
         size === ButtonSize.XXL ? "px-7 py-4" : "",
         // Default
-        "gap-2 bg-primary rounded-lg text-white text-sm font-medium flex items-center justify-center"
+        "gap-2 bg-black rounded-lg text-white text-sm font-medium flex items-center justify-center"
       )}
     >
       {label}
