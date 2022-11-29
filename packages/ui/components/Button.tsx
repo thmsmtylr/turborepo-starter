@@ -10,7 +10,7 @@ export interface ButtonProps {
   disabled?: boolean;
   icon?: any | SVGElement;
   iconAlign?: "left" | "right";
-  type: "submit" | "reset" | "button";
+  type?: "submit" | "reset" | "button";
 }
 
 export type ButtonRef = HTMLButtonElement;
