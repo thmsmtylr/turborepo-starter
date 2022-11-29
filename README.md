@@ -6,6 +6,8 @@ This is a Yarn v3 Turborepo (monorepo) starter.
 
 This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package manager. It includes the following packages/apps:
 
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=thmsmtylr_turborepo-starter&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=thmsmtylr_turborepo-starter)
+
 ### Apps and Packages
 
 - `docs`: a [Next.js](https://nextjs.org) app
