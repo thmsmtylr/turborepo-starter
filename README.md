@@ -1,7 +1,5 @@
 # Turborepo starter (Next.js, TypeScript, Docker, ESLint, Jest, Prettier, Rollup.js, Tailwind, Storybook)
 
-This is a Yarn v3 Turborepo (monorepo) starter.
-
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=thmsmtylr_turborepo-starter&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=thmsmtylr_turborepo-starter)
 
 ## What's inside?
