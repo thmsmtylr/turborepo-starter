@@ -26,5 +26,8 @@
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "packageManager": "yarn@1.22.19"
+  "packageManager": "yarn@1.22.19",
+  "resolutions": {
+    "**/fsevents": "^2.3.2"
+  }
 }
