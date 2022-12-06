@@ -13,7 +13,7 @@ const Web: NextPage = () => {
       </Head>
       <main>
         <h1>Turborepo Starter: Web</h1>
-        {/* <Button label="button" onClick={() => console.log("click")} /> */}
+        <Button label="button" onClick={() => console.log("click")} />
       </main>
     </>
   );
