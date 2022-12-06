@@ -65,13 +65,13 @@ Todo
 
 Each app in your `apps` directory will need to be deployed seperatly. Your build and development settings should look something like the following:
 
-- `Build Command`:
+`Build Command`:
 
 ```
 cd ../.. && npx turbo run build --filter=web...
 ```
 
-- `Development Command`:
+`Development Command`:
 
 ```
 next dev --port $PORT
