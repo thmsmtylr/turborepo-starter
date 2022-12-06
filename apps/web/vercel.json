@@ -2,5 +2,6 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "cd ../.. && npx turbo run build --filter=web...",
   "devCommand": "next dev --port $PORT",
-  "installCommand": "yarn install"
+  "installCommand": "yarn install",
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD ./"
 }
