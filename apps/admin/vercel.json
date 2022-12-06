@@ -1,0 +1,6 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "cd ../.. && npx turbo run build --filter=admin...",
+  "devCommand": "next dev --port $PORT",
+  "installCommand": "yarn install"
+}
