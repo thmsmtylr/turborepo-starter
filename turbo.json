@@ -18,6 +18,9 @@
     },
     "build:ui": {
       "cache": false
+    },
+    "test": {
+      "cache": false
     }
   }
 }

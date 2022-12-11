@@ -14,7 +14,8 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "storybook": "turbo run storybook",
     "build:storybook": "turbo run build:storybook",
-    "build:ui": "turbo run build:ui"
+    "build:ui": "turbo run build:ui",
+    "test": "turbo run test"
   },
   "devDependencies": {
     "next-link": "^2.0.0",
