@@ -24,11 +24,7 @@
     "@svgr/rollup": "^6.2.1",
     "@svgr/webpack": "^6.2.0",
     "@tailwindcss/forms": "^0.4.0",
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.2",
     "@types/babel__core": "^7.1.18",
-    "@types/jest": "^27.4.0",
-    "@types/jest-axe": "^3.5.3",
     "@types/lodash": "^4.14.178",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
@@ -37,8 +33,6 @@
     "config": "*",
     "from": "^0.1.7",
     "import": "^0.0.6",
-    "jest": "^27.5.1",
-    "jest-axe": "^5.0.1",
     "next": "^12.1.0",
     "postcss": "^8.4.5",
     "postcss-loader": "^6.2.1",
@@ -58,12 +52,13 @@
     "dev": "start-storybook -p 6006",
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook",
-    "build:ui": "NODE_ENV=production rollup -c rollup.config.js",
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "build:ui": "NODE_ENV=production rollup -c rollup.config.js"
   },
   "dependencies": {
     "react": "18",
     "react-dom": "18"
+  },
+  "resolutions": {
+    "**/fsevents": "^2.3.2"
   }
 }
