@@ -18,9 +18,7 @@
     "test": "turbo run test"
   },
   "devDependencies": {
-    "next-link": "^2.0.0",
     "prettier": "^2.5.1",
-    "react-dom": "^17.0.2",
     "turbo": "latest"
   },
   "engines": {
