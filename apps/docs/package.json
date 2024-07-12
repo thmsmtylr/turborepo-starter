@@ -20,7 +20,7 @@
     "config": "*",
     "eslint": "7.32.0",
     "next-transpile-modules": "10.0.0",
-    "postcss": "^8.4.19",
+    "postcss": "^8.4.31",
     "tailwindcss": "^3.2.4",
     "tsconfig": "*",
     "typescript": "^4.5.3"
